@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Caravan Chronicle - Circus Grievance Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-tent"></i>
+                <h1>The Caravan Chronicle</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#heatmap">Heatmap</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-accent">Login</a>
+                <a href="register.html" class="btn">Register</a>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Welcome to The Caravan Chronicle</h2>
+            <p>A comprehensive grievance management system for the Circus of Wonders community. Report issues, track resolutions, and help maintain our vibrant mobile city.</p>
+            <a href="register.html" class="btn btn-accent">Report an Issue</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">System Features</h2>
+            <div class="features-grid">
+                <div class="feature-card card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Secure Authentication</h3>
+                    <p>Role-based access control for citizens, staff, and administrators with secure login systems.</p>
+                </div>
+                <div class="feature-card card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Complaint Management</h3>
+                    <p>Submit detailed complaints with text, location, and image evidence. Track status in real-time.</p>
+                </div>
+                <div class="feature-card card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Staff Dashboard</h3>
+                    <p>Municipal staff can assign, update, and manage complaint tickets with an intuitive interface.</p>
+                </div>
+                <div class="feature-card card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Advanced Search</h3>
+                    <p>Filter complaints by type, area, urgency, and date for efficient issue management.</p>
+                </div>
+                <div class="feature-card card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Heatmap Visualization</h3>
+                    <p>Interactive map to identify high-density problem areas across the circus grounds.</p>
+                </div>
+                <div class="feature-card card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>SLA Tracking & Alerts</h3>
+                    <p>Automated monitoring of resolution times with alerts for overdue tickets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Flow Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Register & Login</h3>
+                    <p>Circus citizens register and log into the secure portal with their credentials.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Submit Complaint</h3>
+                    <p>Provide details including category, description, location, and photo evidence.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Ticket Creation</h3>
+                    <p>The system creates a unique ticket with "OPEN" status and notifies staff.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Assignment & Updates</h3>
+                    <p>Staff assign tickets and update status to "IN PROGRESS" as they work on issues.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Resolution</h3>
+                    <p>Upon completion, staff update the ticket to "RESOLVED" and notify the citizen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="dashboard-preview" id="dashboard">
+        <div class="container">
+            <h2 class="section-title">Dashboard Preview</h2>
+            <div class="card">
+                <div class="dashboard-tabs">
+                    <div class="tab active" data-tab="citizen">Citizen Portal</div>
+                    <div class="tab" data-tab="staff">Staff Dashboard</div>
+                    <div class="tab" data-tab="admin">Admin Analytics</div>
+                </div>
+                
+                <div class="tab-content active" id="citizen-tab">
+                    <h3>My Complaints</h3>
+                    <div class="ticket">
+                        <div class="ticket-header">
+                            <span class="ticket-id">#TC-2023-0012</span>
+                            <span class="ticket-status status-in-progress">IN PROGRESS</span>
+                        </div>
+                        <p><strong>Water leak near Big Top entrance</strong></p>
+                        <p>Submitted: 2 days ago | Assigned to: Maintenance Team</p>
+                    </div>
+                    <div class="ticket">
+                        <div class="ticket-header">
+                            <span class="ticket-id">#TC-2023-0008</span>
+                            <span class="ticket-status status-resolved">RESOLVED</span>
+                        </div>
+                        <p><strong>Damaged pathway in vendor area</strong></p>
+                        <p>Submitted: 1 week ago | Resolved: 3 days ago</p>
+                    </div>
+                    <div class="ticket urgent">
+                        <div class="ticket-header">
+                            <span class="ticket-id">#TC-2023-0015</span>
+                            <span class="ticket-status status-urgent">URGENT</span>
+                        </div>
+                        <p><strong>Electrical hazard near food stalls</strong></p>
+                        <p>Submitted: 5 hours ago | SLA: 12 hours remaining</p>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="staff-tab">
+                    <h3>Assigned Tickets</h3>
+                    <div class="ticket">
+                        <div class="ticket-header">
+                            <span class="ticket-id">#TC-2023-0012</span>
+                            <span class="ticket-status status-in-progress">IN PROGRESS</span>
+                        </div>
+                        <p><strong>Water leak near Big Top entrance</strong></p>
+                        <p>Priority: Medium | Category: Infrastructure</p>
+                        <button class="btn" style="margin-top: 10px;">Update Status</button>
+                    </div>
+                    <div class="ticket urgent">
+                        <div class="ticket-header">
+                            <span class="ticket-id">#TC-2023-0015</span>
+                            <span class="ticket-status status-urgent">URGENT</span>
+                        </div>
+                        <p><strong>Electrical hazard near food stalls</strong></p>
+                        <p>Priority: High | Category: Safety</p>
+                        <button class="btn" style="margin-top: 10px;">Update Status</button>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="admin-tab">
+                    <h3>Performance Analytics</h3>
+                    <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                        <div style="text-align: center;">
+                            <h4>Open Tickets</h4>
+                            <p style="font-size: 2rem; color: var(--info);">12</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <h4>In Progress</h4>
+                            <p style="font-size: 2rem; color: var(--warning);">8</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <h4>Resolved (7 days)</h4>
+                            <p style="font-size: 2rem; color: var(--success);">24</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <h4>SLA Breaches</h4>
+                            <p style="font-size: 2rem; color: var(--danger);">3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heatmap Section -->
+    <section class="heatmap" id="heatmap">
+        <div class="container">
+            <h2 class="section-title">Problem Area Heatmap</h2>
+            <div class="card">
+                <p style="margin-bottom: 20px;">Visual representation of reported issues across the circus grounds. Red areas indicate higher concentrations of problems.</p>
+                <div class="heatmap-container">
+                    <!-- Heatmap points would be dynamically generated in a real implementation -->
+                    <div class="heatmap-point" style="top: 30%; left: 20%;"></div>
+                    <div class="heatmap-point" style="top: 60%; left: 35%;"></div>
+                    <div class="heatmap-point" style="top: 40%; left: 50%;"></div>
+                    <div class="heatmap-point" style="top: 70%; left: 65%;"></div>
+                    <div class="heatmap-point" style="top: 25%; left: 75%;"></div>
+                    <div class="heatmap-point" style="top: 55%; left: 80%;"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-top: 15px;">
+                    <span>Low Priority</span>
+                    <span>Medium Priority</span>
+                    <span>High Priority</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>The Caravan Chronicle</h3>
+                    <p>A grievance management system for the Circus of Wonders community, ensuring transparency and efficiency in issue resolution.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#process">Process Flow</a></li>
+                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#heatmap">Heatmap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Circus of Wonders Grounds</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-CIRCUS</li>
+                        <li><i class="fas fa-envelope"></i> support@caravanchronicle.circus</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 The Caravan Chronicle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
